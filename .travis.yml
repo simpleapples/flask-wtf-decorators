@@ -9,8 +9,8 @@ env:
   - FLASK=0.12
   - FLASK-WTF=0.15
 install:
-  - pip install -q Flask==$FLASK
-  - pip install -q Flask-WTF==$FLASK-WTF
+  - pip install Flask
+  - pip install Flask-WTF
   - pip install coveralls
 script:
   - "python -m unittest discover -s tests"
