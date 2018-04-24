@@ -10,12 +10,13 @@ env:
   - FLASK=0.12
   - Flask-WTF=0.9
   - Flask-WTF=0.15
-
 install:
   - pip install -q Flask==$FLASK
   - pip install coveralls
-script: make ci
-after_success: coveralls
+script:
+  - "python -m unittest discover -s tests"
+after_success:
+  - coveralls
 
 notifications:
   email:
