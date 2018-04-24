@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+
+# ENV
+Pipfile
+Pipfile.lock
+pyvenv
+venv
+
+# IDE
+.idea/
+
+# Python
+.egg
+.egg-info
+*.egg-info/
+.pyc

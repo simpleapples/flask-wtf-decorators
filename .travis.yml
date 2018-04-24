@@ -1,0 +1,23 @@
+sudo: false
+language: python
+python:
+  - 3.6
+  - 3.5
+  - 3.4
+  - 3.3
+env:
+  - FLASK=0.7
+  - FLASK=0.12
+  - Flask-WTF=0.9
+  - Flask-WTF=0.15
+
+install:
+  - pip install -q Flask==$FLASK
+  - pip install coveralls
+script: make ci
+after_success: coveralls
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
