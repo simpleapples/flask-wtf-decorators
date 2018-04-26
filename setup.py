@@ -16,6 +16,7 @@ setup(
     author_email='zangzhiya@gmail.com',
     description='Decorators for flask-wtf',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=find_packages(exclude=['tests']),
     classifiers=[
         'Programming Language :: Python :: 3',
