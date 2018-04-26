@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Flask-WTF-Decorators',
-    version='0.1.1',
+    version='0.1.2',
     license='MIT',
     url='https://github.com/simpleapples/flask-wtf-decorators/',
     author='Zhiya Zang',
