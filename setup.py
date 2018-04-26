@@ -1,14 +1,21 @@
+from os import path
 from setuptools import setup, find_packages
+
+
+here = path.abspath(path.dirname(__file__))
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 
 setup(
     name='Flask-WTF-Decorators',
-    version='0.1',
+    version='0.1.1',
     license='MIT',
     url='https://github.com/simpleapples/flask-wtf-decorators/',
     author='Zhiya Zang',
     author_email='zangzhiya@gmail.com',
     description='Decorators for flask-wtf',
+    long_description=long_description,
     packages=find_packages(exclude=['tests']),
     classifiers=[
         'Programming Language :: Python :: 3',
